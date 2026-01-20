@@ -1,0 +1,127 @@
+<div class="content padded">
+
+    <div class="row">
+
+        <div class="col-lg-6">
+
+            <!-- Top Bar -->
+            <div class="top-bar">
+        <span class="pull-left"><a href="#" class="ajax-project-close btn btn-default btn-sm btn-pull-up"><i
+                class="fa fa-times icon-before"></i>Fermer</a></span>
+                <h6 class="pull-right text-muted short">Données du projet</h6>
+            </div>
+
+            <div class="long">
+                <h2 class="short">CISCO PacketTracer</h2>
+                <span class="text-muted">Laboratoire CISCO</span>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <h5>Informations générales</h5>
+                    <p>Laboratoire pratique avec CISCO Packet Tracer. </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5>Détails du projet</h5>
+                    <p>	-CCTP (Centre de Commutation Téléphonique Privé).
+                        -Lampes intelligentes.
+                        -Capteurs.
+                        -Maison en ligne.
+                        -Serrures intelligentes.
+                        -Thermostats automatiques.
+                        -Machines à café connectées.
+                        -Assistants virtuels qui réagissent aux commandes vocales, etc...</p>
+                </div>
+
+                <div class="col-lg-12">
+                    <h5>Résultats</h5>
+                    <p>L'IoT (Internet of Things / Internet of Things) est une extension d'Internet, qui permet
+                        objets de (doté d'une capacité de calcul et de communication), pour se connecter à Internet.
+                        Les « choses » échangent des données entre elles et avec Internet, prenant des décisions automatiquement, sans
+                        interaction humaine, selon votre emploi du temps. Cette connexion permet par exemple de contrôler à distance des objets commun et
+                        qu'ils sont utilisés comme prestataires de services...
+                    </p>
+                    <p><a href="#contact" class="btn btn-primary">Besoin de quelque chose de similaire...</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/portfolio/packtracer/capa_project_01.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/packtracer/slider_project_01.png" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/packtracer/slider_project_02.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/packtracer/slider_project_03.png" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/packtracer/slider_project_04.png" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/packtracer/slider_project_05.png" alt=""/>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script>
+    $(document).ready(function () {
+
+        // Ajax Project Close
+
+        function closeContent() {
+            $('.project-content').delay(100).slideUp(1000, function () {
+                $('.project-loader').show(0);
+                $('.project-loader .logo-loader').show(0);
+                $.waypoints('refresh')
+            });
+            $('html, body').animate({
+                scrollTop: $('#portfolio').position().top
+            }, 600);
+        }
+
+        $('.ajax-project-close').click(function () {
+            closeContent();
+        });
+
+    });
+</script>

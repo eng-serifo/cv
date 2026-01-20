@@ -1,0 +1,122 @@
+<div class="content padded">
+
+    <div class="row">
+
+        <div class="col-lg-6">
+
+            <!-- Top Bar -->
+            <div class="top-bar">
+        <span class="pull-left"><a href="#" class="ajax-project-close btn btn-default btn-sm btn-pull-up"><i
+                class="fa fa-times icon-before"></i>Fechar</a></span>
+                <h6 class="pull-right text-muted short">Dados do Projeto</h6>
+            </div>
+
+            <div class="long">
+                <h2 class="short">E Nogos</h2>
+                <span class="text-muted">Negócio</span>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <h5>Informação geral</h5>
+                    <p>Gestão de Produto / Loja. </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5>Detalhes do Projeto</h5>
+                    <p>-Módulo de Gestão de Clientes.
+                        -Módulo de Suprimento e Compra.
+                        -Módulo de Inventário.
+                        -Sistema Fácil de Faturamento.
+                        -Módulo financeiro.
+                        -Módulo de gerenciamento de produtos.</p>
+                </div>
+
+                <div class="col-lg-12">
+                    <h5>Resultados</h5>
+                    <p>Um sistema de gerenciamento de pequenas empresas moderno e responsivo.
+                        Ele é projetado e desenvolvido para empresa de pequeno porte, empresa e qualquer
+                        tipo de negócio. Contabilidade, gerenciamento, fatura, usuário e análise de dados... </p>
+                    <p><a href="#contact" class="btn btn-primary">Precisa de algo parecido...</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/portfolio/nha_app/capa_project_01.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/nha_app/slider_project_01.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/nha_app/slider_project_02.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/nha_app/slider_project_03.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/nha_app/slider_project_04.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/nha_app/slider_project_05.jpg" alt=""/>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script>
+    $(document).ready(function () {
+
+        // Ajax Project Close
+
+        function closeContent() {
+            $('.project-content').delay(100).slideUp(1000, function () {
+                $('.project-loader').show(0);
+                $('.project-loader .logo-loader').show(0);
+                $.waypoints('refresh')
+            });
+            $('html, body').animate({
+                scrollTop: $('#portfolio').position().top
+            }, 600);
+        }
+
+        $('.ajax-project-close').click(function () {
+            closeContent();
+        });
+
+    });
+</script>
